@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUEVA RíO D'OR</title>
+    <!-- Incluir Tailwind CSS mediante Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración de Tailwind CSS -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1D4ED8',   // Azul
+                        secondary: '#9333EA', // Morado
+                        accent: '#10B981',    // Verde
+                        light: '#F3F4F6',     // Gris claro para fondos
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'], // Fuente personalizada
+                    },
+                },
+            },
+        }
+    </script>
+    <!-- Incluir Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Meta Descripción para SEO -->
+    <meta name="description" content="Página de menú para acceder a los proyectos de NUEVA RíO D'OR en GitHub. Encuentra y explora nuestras opciones de Productos, Órdenes de Compra, Registro Diario e Importaciones de manera fácil y rápida.">
+</head>
+<body class="bg-light min-h-screen flex flex-col items-center justify-center font-sans transition-colors duration-500">
+    <div class="container mx-auto p-6">
+        <!-- Logo (Opcional) -->
+        <!-- Descomenta y actualiza la ruta de la imagen si deseas añadir un logo -->
+        <!--
+        <div class="flex justify-center mb-6">
+            <img src="ruta/al/logo.png" alt="Logo de NUEVA RíO D'OR" class="h-20">
+        </div>
+        -->
+
+        <!-- Título Principal -->
+        <h1 class="text-4xl sm:text-5xl font-bold text-center text-primary mb-8">NUEVA RíO D'OR</h1>
+        
+        <!-- Menú de Opciones -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Tarjeta de Productos -->
+            <a href="https://github.com/nombredeusuario/productos" target="_blank" class="block bg-white rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                <div class="p-6 flex flex-col justify-between h-full">
+                    <div class="flex items-center mb-4">
+                        <!-- Icono de Productos -->
+                        <svg class="h-8 w-8 text-secondary mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <!-- SVG del icono: Caja de Productos -->
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18v18H3V3z" />
+                        </svg>
+                        <h2 class="text-lg sm:text-xl font-semibold text-secondary truncate">Productos</h2>
+                    </div>
+                    <p class="text-gray-600 mb-6">Gestiona y visualiza todos tus productos de manera eficiente.</p>
+                    <p class="text-sm text-gray-500">Último acceso: 21/09/2024</p>
+                </div>
+            </a>
+            
+            <!-- Tarjeta de Órdenes de Compra -->
+            <a href="https://github.com/nombredeusuario/ordenes-de-compra" target="_blank" class="block bg-white rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                <div class="p-6 flex flex-col justify-between h-full">
+                    <div class="flex items-center mb-4">
+                        <!-- Icono de Órdenes de Compra -->
+                        <svg class="h-8 w-8 text-secondary mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <!-- SVG del icono: Lista de Órdenes -->
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5-6l3 3-3 3" />
+                        </svg>
+                        <h2 class="text-lg sm:text-xl font-semibold text-secondary truncate">Órdenes de Compra</h2>
+                    </div>
+                    <p class="text-gray-600 mb-6">Administra y monitorea todas tus órdenes de compra.</p>
+                    <p class="text-sm text-gray-500">Último acceso: 20/09/2024</p>
+                </div>
+            </a>
+            
+            <!-- Tarjeta de Registro Diario -->
+            <a href="https://github.com/nombredeusuario/registro-diario" target="_blank" class="block bg-white rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                <div class="p-6 flex flex-col justify-between h-full">
+                    <div class="flex items-center mb-4">
+                        <!-- Icono de Registro Diario -->
+                        <svg class="h-8 w-8 text-secondary mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <!-- SVG del icono: Calendario -->
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        <h2 class="text-lg sm:text-xl font-semibold text-secondary truncate">Registro Diario</h2>
+                    </div>
+                    <p class="text-gray-600 mb-6">Lleva un control detallado de tus actividades diarias.</p>
+                    <p class="text-sm text-gray-500">Último acceso: 19/09/2024</p>
+                </div>
+            </a>
+            
+            <!-- Tarjeta de Importaciones -->
+            <a href="https://github.com/nombredeusuario/importaciones" target="_blank" class="block bg-white rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                <div class="p-6 flex flex-col justify-between h-full">
+                    <div class="flex items-center mb-4">
+                        <!-- Icono de Importaciones -->
+                        <svg class="h-8 w-8 text-secondary mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <!-- SVG del icono: Importación/Exportación -->
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                        </svg>
+                        <h2 class="text-lg sm:text-xl font-semibold text-secondary truncate">Importaciones</h2>
+                    </div>
+                    <p class="text-gray-600 mb-6">Gestiona y optimiza tus procesos de importación.</p>
+                    <p class="text-sm text-gray-500">Último acceso: 18/09/2024</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
